@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="http://www.baidu.com/s" method="get" target="_blank">
+        <input type="text" name="wd" placeholder="输入内容">
+        <button>百度搜索</button>
+    </form>
+    <fieldset>
+        <legend>
+            主要信息
+        </legend>
+        账号：
+        <input disabled type="text" name="account" placeholder="输入内容" value="张三" maxlength="10">
+        <br>
+        <!--disabled禁用-->
+        密码：
+        <input type="password" name="pwd"  maxlength="10">
+        <br>
+    </fieldset>
+    <form action="http://search.jd.com/search" method="get" target="_blank">
+        <!-- radio单选框 -->
+        性别：
+        <input type="radio" name="gender" value="male">男 
+        <input type="radio" name="gender" value="female" checked>女
+        <br>
+        <!-- checkbox多选框 -->
+        爱好:
+        <input type="checkbox" name="hobby" value="football" checked>足球 
+        <input disabled type="checkbox" name="hobby" value="basketball">篮球
+        <input type="checkbox" name="hobby" value="pingpang" checked>乒乓球
+        <br>
+        <!--label 点击汉字也可选中框-->
+        <label for="zhanghu">其他：</label>
+        <textarea id="zhanghu" name="other" cols="23" rows="10"></textarea>
+        <br>
+        籍贯：<select name="place">
+            <option value="beijing">北京</option>
+            <option value="shanghai" selected>上海</option>
+            <option value="guangzhou">广州</option
+            ><br>
+        <input type="hidden" name="hidden" value="123">
+        <br>
+        <!-- 按钮第二种写法 -->
+        <input type="submit" value="确认">
+        <!-- 重置按钮 -->
+        <input type="reset" value="重置">
+        <!-- <button type="reset">重置</button> -->
+         <!-- 普通按钮 -->
+        <!-- <button type="button">检测</button> -->
+        <input type="button" value="检测">
+        <button>京东搜索</button>
+    </form>
+</body>
+</html>
