@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 同类型第一个 */
+        div>p:first-of-type{
+            color: rgb(207, 146, 146);
+        }
+        div>p:last-child {
+            color: blue;
+        }
+        div>p:nth-child(3) {
+            color: red;
+        }
+        div>p:nth-child(4) {
+            color: green;
+        }
+        div>p:last-of-type {
+            color: yellow;
+        }
+        /* 同类型的第几个 */
+        div>p:nth-of-type(4) {
+            color: rgb(151, 207, 150);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span>成绩单</span>
+        <p>张三:99分</p>
+        <p>李四:98分</p>
+        <p>王五:97分</p>
+        <p>赵六:96分</p>
+        <p>老七:95分</p>
+        <p>老八:94分</p>
+        <span>测试</span>
+    </div>
+</body>
+</html>

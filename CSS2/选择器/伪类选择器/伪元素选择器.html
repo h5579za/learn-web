@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div::first-letter {
+            font-size: 50px;
+            color: red;
+        }
+        div::first-line {
+            font-size: 50px;
+            color: rgb(143, 189, 208);
+        }
+        /* 鼠标选中的文字 */
+        div::selection {
+            background-color: rgb(255, 0, 0);
+            color: rgb(153, 208, 175);
+        }
+        input::placeholder {
+            color: rgb(204, 111, 189);
+            font-size: 20px;
+        }
+        p::before{
+            content: "$";
+        }
+        p::after{
+            content: "元";
+        }
+    </style>
+</head>
+<body>
+    <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint voluptas maxime fuga enim velit porro delectus! Veritatis repellat dolorem culpa voluptate, suscipit explicabo voluptatum autem. Ipsam magni molestias aut quis.</div>
+    <input placeholder="输入用户名">
+    <p>100</p>
+    <p>200</p>
+    <p>300</p>
+    <p>400</p>
+</body>
+</html>

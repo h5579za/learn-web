@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div>p:not(.fail){
+            color: rgb(207, 146, 146);
+        } */
+        /* div>p:not([title^="要加油"]){
+            color: blue;
+        } */
+        div>p:not(:first-child){
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>张三:99分</p>
+        <p>李四:98分</p>
+        <p title="要加油">王五:97分</p>
+        <p class="fail">赵六:96分</p>
+        <p class="fail">老七:95分</p>
+        <p>老八:94分</p>
+        <span>测试</span>
+    </div>
+</body>
+</html>

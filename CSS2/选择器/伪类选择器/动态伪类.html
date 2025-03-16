@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*未选择的*/
+        a:link {
+            color: red;
+        }
+        /*已选择的*/
+        a:visited {
+            color: green;
+        }
+        /*鼠标悬停*/
+        a:hover{
+            color: skyblue;
+        }
+        /* 点击不松鼠标 */
+        a:active {
+            color: gold;
+        }
+        span:hover {
+            color: rgb(131, 233, 126);
+        }
+        span:active {
+            color: rgb(233, 126, 131);
+        }
+        input:focus {
+            color:orange;
+            background-color: rgb(233, 126, 131);
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.baidu.com" target="_blank">百度</a>
+    <a href="https://www.jd.com" target="_self">京东</a>
+    <span>123</span>
+    <br>
+    <input type="text">
+    <br>
+    <input type="text">
+    <br>
+    <input type="text">
+</body>
+</html>

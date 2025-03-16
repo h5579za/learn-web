@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:checked {
+            width:100px;
+            height:100px;
+        }
+        input:enabled {
+            background-color:blue
+        }
+        input:disabled {
+            background-color:brown
+        }
+    </style>
+</head>
+<body>
+    <!-- 不能改颜色 -->
+    <input type="checkbox" value="张三" />
+    <input type="radio" name="gender" value="李四" />
+    <input type="radio" name="gender" value="王五" />
+    <br>
+    <input>
+    <input type="text" disabled>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div>p:nth-last-child(3){
+            color: rgb(207, 146, 146);
+        }
+        div>p:nth-last-of-type(3){
+            color: rgb(74, 168, 164);
+        }
+        /* 必须是独生子女，不能有兄弟 */
+        /* span:only-child{
+            color: rgb(255, 0, 0);
+        } */
+        /* 必须是没有同类型兄弟的 */
+        span:only-of-type{
+            color: rgb(0, 255, 0);
+        }
+        /* 根元素 */
+        :root{
+            background-color: rgb(255, 0, 0);
+        }
+        p:empty {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(0, 0, 255);
+        }
+    </style>
+</head>
+<body>
+    <p></p>
+    <div>
+        <span>123</span>
+        <span>456</span>
+    </div>
+
+    <div>
+        <span>123</span>
+        <p>456</p>
+    </div>
+
+    <div>
+        <span>123</span>
+    </div>
+
+    <div>
+        <span>成绩单</span>
+        <p>张三:99分</p>
+        <p>李四:98分</p>
+        <p>王五:97分</p>
+        <p>赵六:96分</p>
+        <p>老七:95分</p>
+        <p>老八:94分</p>
+        <span>测试</span>
+    </div>
+</body>
+</html>
