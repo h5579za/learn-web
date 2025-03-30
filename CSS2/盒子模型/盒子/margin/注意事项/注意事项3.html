@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #d1{
+            width: 400px;
+            height: 400px;
+            background-color: deepskyblue;
+            margin: 50px;
+        }
+        .one{
+            background-color: pink;
+        }
+        .two{
+            margin-top: 1000px;
+            margin-bottom: 1000px;
+            background-color: pink;
+        }
+        .three{
+            background-color: pink;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <!-- 对于行内元素来说，左右margin是可以完美设置的，但是上下margin是无效的 -->
+    <div id="d1">块级元素</div>
+    <div>块级元素</div>
+    <br>
+    <img src="/悟空.jpg" alt="悟空">
+    <div>块级元素</div>
+    <span class="one">123</span>
+    <span class="two">123</span>
+    <span class="three">123</span>
+</body>
+</html>

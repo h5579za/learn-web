@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            font-size: 40px;
+        }
+        #d1{
+            font-size: 20px;
+            height: 200px;
+            width: 200px;
+            background-color: skyblue;
+        }
+        #d2{
+            /* em:相对font-size的倍数 */
+            font-size: 20px;
+            height: 10em;
+            width: 10em;
+            background-color: pink;
+        }
+        #d3{
+            /* rem:相对根元素的font-size的倍数 */
+            font-size: 20px;
+            height: 10rem;
+            width: 10rem;
+            background-color: yellow;
+        }
+        #d4{
+            font-size: 20px;
+            height: 200px;
+            width: 200px;
+            line-height: 1.5;
+            background-color: green;
+        }
+        .inside{
+            /* % 相对其父元素的百分比 */
+            font-size: 150%;
+            height: 25%;
+            width: 50%;
+            background-color: rgb(181, 154, 33);
+        }
+        .test{
+            font-size: 80px;
+            text-indent: 2em;
+            background-color: red;
+        }   
+    </style>
+</head>
+<body>
+    <div id="d1">1</div>
+    <br>
+    <div id="d2">2</div>
+    <br>
+    <div id="d3">3</div>
+    <br>
+    <div id="d4">
+        <div class="inside">1</div>
+    </div>
+    <div class="test">好好学习</div>
+</body>
+</html>
